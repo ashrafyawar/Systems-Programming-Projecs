@@ -1,0 +1,156 @@
+==95711== Memcheck, a memory error detector
+==95711== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==95711== Using Valgrind-3.15.0-608cb11914-20190413 and LibVEX; rerun with -h for copyright info
+==95711== Command: ./editorcompiled /ipsu[Md]/open; input_file.txt
+==95711== Parent PID: 92674
+==95711== 
+--95711-- 
+--95711-- Valgrind options:
+--95711--    --leak-check=full
+--95711--    -v
+--95711--    --track-origins=yes
+--95711--    --log-file=vg_logfile.out
+--95711-- Contents of /proc/version:
+--95711--   Linux version 5.4.0-107-generic (buildd@lcy02-amd64-058) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #121-Ubuntu SMP Thu Mar 24 16:04:27 UTC 2022
+--95711-- 
+--95711-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--95711-- Page sizes: currently 4096, max supported 4096
+--95711-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--95711-- Reading syms from /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled
+--95711-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--95711--   Considering /usr/lib/x86_64-linux-gnu/ld-2.31.so ..
+--95711--   .. CRC mismatch (computed 0306b78c wanted 8d362b37)
+--95711--   Considering /lib/x86_64-linux-gnu/ld-2.31.so ..
+--95711--   .. CRC mismatch (computed 0306b78c wanted 8d362b37)
+--95711--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.31.so ..
+--95711--   .. CRC is valid
+--95711-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--95711--    object doesn't have a symbol table
+--95711--    object doesn't have a dynamic symbol table
+--95711-- Scheduler: using generic scheduler lock implementation.
+--95711-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==95711== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-95711-by-ashraf-on-???
+==95711== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-95711-by-ashraf-on-???
+==95711== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-95711-by-ashraf-on-???
+==95711== 
+==95711== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==95711== don't want to do, unless you know exactly what you're doing,
+==95711== or are doing some strange experiment):
+==95711==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=95711 ...command...
+==95711== 
+==95711== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==95711==   /path/to/gdb ./editorcompiled
+==95711== and then give GDB the following command
+==95711==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=95711
+==95711== --pid is optional if only one valgrind process is running
+==95711== 
+--95711-- REDIR: 0x4022e10 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (???)
+--95711-- REDIR: 0x4022be0 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (???)
+--95711-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--95711--    object doesn't have a symbol table
+--95711-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--95711--    object doesn't have a symbol table
+==95711== WARNING: new redirection conflicts with existing -- ignoring it
+--95711--     old: 0x04022e10 (strlen              ) R-> (0000.0) 0x580c9ce2 ???
+--95711--     new: 0x04022e10 (strlen              ) R-> (2007.0) 0x0483f060 strlen
+--95711-- REDIR: 0x401f5f0 (ld-linux-x86-64.so.2:strcmp) redirected to 0x483ffd0 (strcmp)
+--95711-- REDIR: 0x4023370 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4843a20 (mempcpy)
+--95711-- Reading syms from /usr/lib/x86_64-linux-gnu/libc-2.31.so
+--95711--   Considering /usr/lib/x86_64-linux-gnu/libc-2.31.so ..
+--95711--   .. CRC mismatch (computed ef41b1a0 wanted f854b801)
+--95711--   Considering /lib/x86_64-linux-gnu/libc-2.31.so ..
+--95711--   .. CRC mismatch (computed ef41b1a0 wanted f854b801)
+--95711--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.31.so ..
+--95711--   .. CRC is valid
+--95711-- REDIR: 0x49334b0 (libc.so.6:memmove) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x49327b0 (libc.so.6:strncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x49337e0 (libc.so.6:strcasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x49320d0 (libc.so.6:strcat) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932810 (libc.so.6:rindex) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4934c80 (libc.so.6:rawmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x494fd10 (libc.so.6:wmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x494f850 (libc.so.6:wcscmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933610 (libc.so.6:mempcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933440 (libc.so.6:bcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932740 (libc.so.6:strncmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932180 (libc.so.6:strcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933570 (libc.so.6:memset) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x494f810 (libc.so.6:wcschr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x49326a0 (libc.so.6:strnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932260 (libc.so.6:strcspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933830 (libc.so.6:strncasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932200 (libc.so.6:strcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933980 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4950f80 (libc.so.6:wcsnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x494f890 (libc.so.6:wcscpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932850 (libc.so.6:strpbrk) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932130 (libc.so.6:index) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932660 (libc.so.6:strlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x493bbd0 (libc.so.6:memrchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933880 (libc.so.6:strcasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933400 (libc.so.6:memchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x494f960 (libc.so.6:wcslen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4932b10 (libc.so.6:strspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933780 (libc.so.6:stpncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933720 (libc.so.6:stpcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4934cc0 (libc.so.6:strchrnul) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x49338d0 (libc.so.6:strncasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x49326e0 (libc.so.6:strncat) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4933320 (libc.so.6:strstr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--95711-- REDIR: 0x4a1b410 (libc.so.6:__strrchr_avx2) redirected to 0x483ea10 (rindex)
+--95711-- REDIR: 0x4a1b5e0 (libc.so.6:__strlen_avx2) redirected to 0x483ef40 (strlen)
+--95711-- REDIR: 0x4a1aff0 (libc.so.6:__strchr_avx2) redirected to 0x483ebf0 (index)
+--95711-- REDIR: 0x492d110 (libc.so.6:malloc) redirected to 0x483b780 (malloc)
+--95711-- REDIR: 0x4a1ea70 (libc.so.6:__memset_avx2_unaligned_erms) redirected to 0x48428e0 (memset)
+--95711-- REDIR: 0x4a1e5d0 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4843660 (mempcpy)
+--95711-- REDIR: 0x4a169b0 (libc.so.6:__strspn_sse42) redirected to 0x4843ef0 (strspn)
+--95711-- REDIR: 0x4a16730 (libc.so.6:__strcspn_sse42) redirected to 0x4843e10 (strcspn)
+--95711-- REDIR: 0x4a1ceb0 (libc.so.6:__strncpy_avx2) redirected to 0x483f230 (strncpy)
+--95711-- REDIR: 0x4a1cb20 (libc.so.6:__strcpy_avx2) redirected to 0x483f090 (strcpy)
+--95711-- REDIR: 0x4a1c110 (libc.so.6:__strncat_avx2) redirected to 0x483ede0 (strncat)
+--95711-- REDIR: 0x4a1baa0 (libc.so.6:__strcat_avx2) redirected to 0x483ec20 (strcat)
+--95711-- REDIR: 0x4a1b220 (libc.so.6:__strchrnul_avx2) redirected to 0x4843540 (strchrnul)
+--95711-- REDIR: 0x494e410 (libc.so.6:__strstr_sse2_unaligned) redirected to 0x4843c20 (strstr)
+==95711== Syscall param write(buf) points to unaddressable byte(s)
+==95711==    at 0x49A10A7: write (write.c:26)
+==95711==    by 0x10A8BE: do_read_write (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A63C: parse_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x1097B7: main (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==  Address 0x4a89800 is 0 bytes after a block of size 4,992 alloc'd
+==95711==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==95711==    by 0x10AC2D: replace_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A898: do_read_write (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A63C: parse_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x1097B7: main (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711== 
+--95711-- REDIR: 0x492d700 (libc.so.6:free) redirected to 0x483c9d0 (free)
+==95711== 
+==95711== Process terminating with default action of signal 2 (SIGINT)
+==95711==    at 0x4843C65: strstr (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==95711==    by 0x10ABD8: replace_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A898: do_read_write (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A63C: parse_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x1097B7: main (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711== 
+==95711== HEAP SUMMARY:
+==95711==     in use at exit: 0 bytes in 0 blocks
+==95711==   total heap usage: 29 allocs, 29 frees, 141,253 bytes allocated
+==95711== 
+==95711== All heap blocks were freed -- no leaks are possible
+==95711== 
+==95711== ERROR SUMMARY: 3 errors from 1 contexts (suppressed: 0 from 0)
+==95711== 
+==95711== 3 errors in context 1 of 1:
+==95711== Syscall param write(buf) points to unaddressable byte(s)
+==95711==    at 0x49A10A7: write (write.c:26)
+==95711==    by 0x10A8BE: do_read_write (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A63C: parse_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x1097B7: main (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==  Address 0x4a89800 is 0 bytes after a block of size 4,992 alloc'd
+==95711==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==95711==    by 0x10AC2D: replace_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A898: do_read_write (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x10A63C: parse_strings (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711==    by 0x1097B7: main (in /home/ashraf/Desktop/SEMESTER 10/2 SYSTEMS PROGRAMMING/HomeWorks/hw1/source_code/editorcompiled)
+==95711== 
+==95711== ERROR SUMMARY: 3 errors from 1 contexts (suppressed: 0 from 0)
