@@ -3,6 +3,5 @@
   - LINKEDIN: https://www.linkedin.com/in/ashrafyawar/
   - PORTFOLIO: https://ashrafyawar.github.io/ashrafyawarwebsite/
 
-<p style="text-align: center;"> ### My Systems Programming Projects Using C </p>
-
-
+### My Systems Programming Projects Using C
+### Topics that System programming covers:
