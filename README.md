@@ -10,4 +10,4 @@
 ![image](https://user-images.githubusercontent.com/32710632/202785532-105b7633-095a-4694-8389-648493463426.png)
 ![image](https://user-images.githubusercontent.com/32710632/202785577-1abe84ae-106e-4e7c-bc47-f16e7a7eea56.png)
 
-## Checkout more on the repository iteself
+## Checkout more on the repository itself
