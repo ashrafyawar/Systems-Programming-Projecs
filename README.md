@@ -3,5 +3,5 @@
   - LINKEDIN: https://www.linkedin.com/in/ashrafyawar/
   - PORTFOLIO: https://ashrafyawar.github.io/ashrafyawarwebsite/
 
-### My Systems Programming Projects Using C
+### Center My Systems Programming Projects Using C
 
