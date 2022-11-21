@@ -4,7 +4,7 @@
   - PORTFOLIO: https://ashrafyawar.github.io/ashrafyawarwebsite/
 
 ### My Systems Programming Projects Using C
-### Topics that System programming covers:
+### Topics that Systems programming covers:
 
 ![image](https://user-images.githubusercontent.com/32710632/202785460-73e46596-bda6-495b-aa46-0dca99e7c62e.png)
 ![image](https://user-images.githubusercontent.com/32710632/202785532-105b7633-095a-4694-8389-648493463426.png)
